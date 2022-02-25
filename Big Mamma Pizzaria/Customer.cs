@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Big_Mamma_Pizzaria
+namespace PizzaStore
 {
     public class Customer
     {
