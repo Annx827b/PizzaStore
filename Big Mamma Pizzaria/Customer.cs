@@ -1,4 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace PizzaStore
 {
@@ -42,14 +46,9 @@ namespace PizzaStore
         #endregion
 
         #region Methods
-        public void PrintCustomerInfo()
+           public override string ToString()
         {
-            Console.WriteLine($"{_name} who has the ID Number: {_idNumber}.");
-            Console.WriteLine($"To see more info about this customer, press any key.");
-            Console.ReadLine();
-            Console.WriteLine($"Phone Number: {_phoneNumber}");
-            Console.WriteLine($"Mail: {_mail}");
-            Console.WriteLine($"Adress: {_adress}");
+            return $"Name: {_name}. Phone Number: {_phoneNumber}. Mail: {_mail}. Adress: {_adress}. Id-Number: {_idNumber}.";
         }
 
         #endregion

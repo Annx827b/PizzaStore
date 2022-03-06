@@ -1,4 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 namespace PizzaStore
 {
     public class Pizza
@@ -44,11 +48,10 @@ namespace PizzaStore
         #endregion
 
         #region Methods
-        public void PrintPizzaInfo()
+        public override string ToString()
         {
-            Console.WriteLine($"{_nameOfPizza} (Toppings: {_topping1}, {_topping2} and {_topping3}) - {_prizeOfPizza} DKK");
+            return $"{_nameOfPizza} (Toppings: {_topping1}, {_topping2} and {_topping3}) - {_prizeOfPizza} DKK";
         }
-
         #endregion
     }
 }

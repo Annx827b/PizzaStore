@@ -1,4 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace PizzaStore
 {
@@ -18,18 +22,21 @@ namespace PizzaStore
         #endregion
         
         #region Properties
-        public string nameOfExtraTopping 
-        { get { return nameOfExtraTopping; } }
+        public string nameOfExtraTopping
+        {
+            get { return _nameOfExtraTopping; }
+        }
 
         public int priceOfExtraTopping
-        { get { return priceOfExtraTopping; } }
+        { get 
+            { return _priceOfExtraTopping; } 
+        }
         #endregion
-
+      
         #region Methods
-        public void AddExtraPepperoni()
+  public override string ToString()
         {
-            int extraTopping1 = 0;
-            extraTopping1 = +1;
+            return $"{_nameOfExtraTopping} - {_priceOfExtraTopping} DKK";
         }
 
         #endregion
