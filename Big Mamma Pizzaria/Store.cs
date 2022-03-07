@@ -8,10 +8,9 @@ namespace PizzaStore
 {
     public class Store
     {
-       
-        static void Main(string[] args)
+        public static void Start()
         {
-            {
+            
                 Pizza pizza1 = new Pizza("Hawaii", 80, "Ham", "Pineapple", "Cheese");
                 Pizza pizza2 = new Pizza("Veggie", 75, "Olives", "Bellpepper", "Mushrooms");
                 Pizza pizza3 = new Pizza("House Special", 90, "Kebab", "Chili", "Cheese");
@@ -28,12 +27,6 @@ namespace PizzaStore
                 Order order2 = new Order(pizza2, customer2, extraTopping2, "Order No. 2", 1.1, 40);
                 Order order3 = new Order(pizza3, customer3, extraTopping3, "Order No. 3", 1.1, 40);
 
-                Console.WriteLine();
-                Start();
-
-                #region Methods
-                void Start()
-                {
                     Console.WriteLine($"Welcome To Big Mamma Pizzaria!");
                     Console.WriteLine();
                     Console.WriteLine($"Press Enter To View The Current MENU");
@@ -85,9 +78,7 @@ namespace PizzaStore
                     Console.WriteLine();
                     Console.WriteLine();
                     Console.ReadKey();
-                }
-                #endregion
-            }
+                
         }
     }
 }
